@@ -1,0 +1,132 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f8f8f8;
+}
+
+/* Contenedor principal */
+.container {
+    width: 60%;
+    background: white;
+    padding: 20px;
+    border: 2px solid black;
+    margin: 40px 0;
+}
+
+/* Encabezado */
+.header {
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+}
+
+/* Diseño de contenido en dos columnas */
+.content {
+    display: flex;
+}
+
+/* Columna izquierda */
+.left-column {
+    width: 30%;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Tarjeta de contacto */
+.contact-card {
+    width: 100%;
+    border: 1px solid black;
+    padding: 15px;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+/* Imagen centrada */
+.photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.photo img {
+    width: 80%;
+    max-width: 150px;
+    border: 1px solid #ddd;
+    padding: 5px;
+    background: #f0f0f0;
+}
+
+/* Línea separadora entre la imagen y el contacto */
+.contact-card hr {
+    margin: 15px auto;
+    width: 80%;
+    border: 1px solid black;
+}
+
+/* Contacto */
+.contact {
+    width:100%;
+    border-top: solid 1px;
+    margin-top: 10px;
+}
+
+.contact h3 {
+    margin-bottom: 10px;
+}
+
+/* Columna derecha */
+.right-column {
+    width: 70%;
+    padding: 15px;
+}
+
+/* Secciones */
+.section {
+    margin-bottom: 20px;
+}
+
+.section h3 {
+    margin-bottom: 5px;
+}
+
+/* Lista */
+ul {
+    padding-left: 20px;
+}
+
+/* 📱 Diseño Responsive */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        margin: 20px 0;
+    }
+
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left-column {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .contact-card {
+        width: 80%;
+        margin: 0 auto;
+        border-bottom: 1px solid black;
+        padding-bottom: 20px;
+    }
+
+    .right-column {
+        width: 100%;
+    }
+}
